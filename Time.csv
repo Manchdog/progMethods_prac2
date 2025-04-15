@@ -1,0 +1,11 @@
+File Name,LINEAR,BINARY TREE,RB TREE,HASH TABLE,std::multimap
+1_data.csv,40,20,11,6,3
+2_data.csv,103,3,3,1,0
+3_data.csv,1029,5,4,2,1
+4_data.csv,1996,9,6,4,1
+5_data.csv,2961,8,6,4,1
+6_data.csv,5021,9,6,5,2
+7_data.csv,5996,12,6,6,1
+8_data.csv,8019,10,7,5,2
+9_data.csv,8929,13,8,8,2
+10_data.csv,10003,18,8,10,2
