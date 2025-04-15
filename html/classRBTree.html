@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: BinaryTree Class Reference</title>
+<title>My Project: RBTree Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,50 +63,43 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classBinaryTree-members.html">List of all members</a>  </div>
+<a href="classRBTree-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">BinaryTree Class Reference</div>  </div>
+<div class="title">RBTree Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Класс, реализующий бинарное дерево  
- <a href="classBinaryTree.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="search__class_8h_source.html">search_class.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae027afc8aeb52840d6d059ef73a32e1d"><td class="memItemLeft" align="right" valign="top"><a id="ae027afc8aeb52840d6d059ef73a32e1d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BinaryTree</b> (std::vector&lt; <a class="el" href="classEmployee.html">Employee</a> &gt; &amp;employees)</td></tr>
-<tr class="separator:ae027afc8aeb52840d6d059ef73a32e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace4bdebf0806d1168fd345bf3f24d370"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#ace4bdebf0806d1168fd345bf3f24d370">insertElem</a> (BinaryTreeElemPtr &amp;newElem)</td></tr>
-<tr class="memdesc:ace4bdebf0806d1168fd345bf3f24d370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавляет новый элемент в бинарное дерево  <a href="classBinaryTree.html#ace4bdebf0806d1168fd345bf3f24d370">More...</a><br /></td></tr>
-<tr class="separator:ace4bdebf0806d1168fd345bf3f24d370"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a569b7ab5b89216a4f1762dda633be0ce"><td class="memItemLeft" align="right" valign="top">BinaryTreeElemPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#a569b7ab5b89216a4f1762dda633be0ce">find</a> (BinaryTreeElemPtr &amp;currElem, const std::string &amp;FIO)</td></tr>
-<tr class="memdesc:a569b7ab5b89216a4f1762dda633be0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция находит лист, содержащий такой ключ  <a href="classBinaryTree.html#a569b7ab5b89216a4f1762dda633be0ce">More...</a><br /></td></tr>
-<tr class="separator:a569b7ab5b89216a4f1762dda633be0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd897a5af6a73e699a9047ee969845f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; BinaryTreeElemPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#a8bd897a5af6a73e699a9047ee969845f">findAll</a> (const std::string &amp;FIO)</td></tr>
-<tr class="memdesc:a8bd897a5af6a73e699a9047ee969845f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция находит все листы с указанным ключом  <a href="classBinaryTree.html#a8bd897a5af6a73e699a9047ee969845f">More...</a><br /></td></tr>
-<tr class="separator:a8bd897a5af6a73e699a9047ee969845f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2c042befe413a7b9b0a5c5777811552"><td class="memItemLeft" align="right" valign="top"><a id="ad2c042befe413a7b9b0a5c5777811552"></a>
-<a class="el" href="classBinaryTreeElem.html">BinaryTreeElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBinaryTree.html#ad2c042befe413a7b9b0a5c5777811552">getRootPointer</a> ()</td></tr>
-<tr class="memdesc:ad2c042befe413a7b9b0a5c5777811552"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает указатель на корень дерева <br /></td></tr>
-<tr class="separator:ad2c042befe413a7b9b0a5c5777811552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2660af7de890b793e85b8542f323eac3"><td class="memItemLeft" align="right" valign="top"><a id="a2660af7de890b793e85b8542f323eac3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RBTree</b> (std::vector&lt; <a class="el" href="classEmployee.html">Employee</a> &gt; &amp;employees)</td></tr>
+<tr class="separator:a2660af7de890b793e85b8542f323eac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af953775cf850f6318a541647b7c407a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#af953775cf850f6318a541647b7c407a4">insertElem</a> (RBTreeElemPtr &amp;newElem)</td></tr>
+<tr class="memdesc:af953775cf850f6318a541647b7c407a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавляет новый элемент в RB дерево  <a href="classRBTree.html#af953775cf850f6318a541647b7c407a4">More...</a><br /></td></tr>
+<tr class="separator:af953775cf850f6318a541647b7c407a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b83bf5924e6a8d0aa108c43f417477"><td class="memItemLeft" align="right" valign="top">RBTreeElemPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#ac9b83bf5924e6a8d0aa108c43f417477">find</a> (RBTreeElemPtr &amp;curr, const std::string &amp;FIO)</td></tr>
+<tr class="memdesc:ac9b83bf5924e6a8d0aa108c43f417477"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция находит лист, содержащий такой ключ  <a href="classRBTree.html#ac9b83bf5924e6a8d0aa108c43f417477">More...</a><br /></td></tr>
+<tr class="separator:ac9b83bf5924e6a8d0aa108c43f417477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb86020c84c96716323055fa1f0b987"><td class="memItemLeft" align="right" valign="top">std::vector&lt; RBTreeElemPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#a8eb86020c84c96716323055fa1f0b987">findAll</a> (const std::string &amp;FIO)</td></tr>
+<tr class="memdesc:a8eb86020c84c96716323055fa1f0b987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция находит все листы с указанным ключом  <a href="classRBTree.html#a8eb86020c84c96716323055fa1f0b987">More...</a><br /></td></tr>
+<tr class="separator:a8eb86020c84c96716323055fa1f0b987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79b1f0aaf2b20cb0c8b465734b6e7fac"><td class="memItemLeft" align="right" valign="top"><a id="a79b1f0aaf2b20cb0c8b465734b6e7fac"></a>
+<a class="el" href="classRBTreeElem.html">RBTreeElem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRBTree.html#a79b1f0aaf2b20cb0c8b465734b6e7fac">getRootPointer</a> ()</td></tr>
+<tr class="memdesc:a79b1f0aaf2b20cb0c8b465734b6e7fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает указатель на корень дерева <br /></td></tr>
+<tr class="separator:a79b1f0aaf2b20cb0c8b465734b6e7fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Класс, реализующий бинарное дерево </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a569b7ab5b89216a4f1762dda633be0ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a569b7ab5b89216a4f1762dda633be0ce">&#9670;&nbsp;</a></span>find()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac9b83bf5924e6a8d0aa108c43f417477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b83bf5924e6a8d0aa108c43f417477">&#9670;&nbsp;</a></span>find()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BinaryTreeElemPtr BinaryTree::find </td>
+          <td class="memname">RBTreeElemPtr RBTree::find </td>
           <td>(</td>
-          <td class="paramtype">BinaryTreeElemPtr &amp;&#160;</td>
-          <td class="paramname"><em>currElem</em>, </td>
+          <td class="paramtype">RBTreeElemPtr &amp;&#160;</td>
+          <td class="paramname"><em>curr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -134,14 +127,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8bd897a5af6a73e699a9047ee969845f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bd897a5af6a73e699a9047ee969845f">&#9670;&nbsp;</a></span>findAll()</h2>
+<a id="a8eb86020c84c96716323055fa1f0b987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eb86020c84c96716323055fa1f0b987">&#9670;&nbsp;</a></span>findAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; BinaryTreeElemPtr &gt; BinaryTree::findAll </td>
+          <td class="memname">std::vector&lt; RBTreeElemPtr &gt; RBTree::findAll </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>FIO</em></td><td>)</td>
@@ -161,23 +154,23 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace4bdebf0806d1168fd345bf3f24d370"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace4bdebf0806d1168fd345bf3f24d370">&#9670;&nbsp;</a></span>insertElem()</h2>
+<a id="af953775cf850f6318a541647b7c407a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af953775cf850f6318a541647b7c407a4">&#9670;&nbsp;</a></span>insertElem()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void BinaryTree::insertElem </td>
+          <td class="memname">void RBTree::insertElem </td>
           <td>(</td>
-          <td class="paramtype">BinaryTreeElemPtr &amp;&#160;</td>
+          <td class="paramtype">RBTreeElemPtr &amp;&#160;</td>
           <td class="paramname"><em>newElem</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Функция добавляет новый элемент в бинарное дерево </p>
+<p>Функция добавляет новый элемент в RB дерево </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newElem</td><td>- элемент, который нужно добавить </td></tr>
