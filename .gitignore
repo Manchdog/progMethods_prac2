@@ -1,0 +1,6 @@
+.vscode
+*.od*
+create_data.py
+latex/
+Doxyfile
+prac1
